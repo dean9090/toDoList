@@ -12,10 +12,8 @@ app.set('view engine', 'mustache')
 app.get('/todo/', function(req, res) {
   // TODO write your code here
   const data = {
+    dones: [{ done: 'Learn Node basics' }, { done: 'Learn Express basics' }, { done: 'Learn Mustache' }],
     todos: [
-      { task: 'Learn node basics' },
-      { task: 'Learn Express basics' },
-      { task: 'Learn Mustace' },
       { task: 'Learn HTML forms with Express' },
       { task: 'Learn about authentication' },
       { task: 'Learn how to connect to PostgreSQL' },

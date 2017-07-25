@@ -28,6 +28,9 @@
         <div class="col-xs-12">
           <ul style = "list-style:none">
             {{#todos}}
+            {{#dones}}
+              <li><input type="checkbox" checked><strike>{{done}}</strike></li>
+            {{/dones}}
             <li><input type = "checkbox" name = "" value= "" >{{task}}</li>
             {{/todos}}
           </ul>
